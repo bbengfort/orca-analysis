@@ -1,18 +1,20 @@
-# orca.console
-# Console utilities for the Keiko application.
+# orca.commands
+# Console commands for the Keiko app
 #
 # Author:   Benjamin Bengfort <bengfort@cs.umd.edu>
-# Created:  Mon Oct 31 16:29:43 2016 -0400
+# Created:  Mon Oct 31 16:16:16 2016 -0400
 #
 # Copyright (C) 2016 University of Maryland
 # For license information, see LICENSE.txt
 #
-# ID: orca.console.py [] benjamin@bengfort.com $
+# ID: __init__.py [] benjamin@bengfort.com $
 
 """
-Console utilities for the Keiko application.
+Console commands for the Keiko app
 """
 
 ##########################################################################
 ## Imports
 ##########################################################################
+
+from .info import InfoCommand

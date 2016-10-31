@@ -1,4 +1,4 @@
-# orca.app
+# orca.console.app
 # Definition of the KeikoUtility app and commands.
 #
 # Author:   Benjamin Bengfort <bengfort@cs.umd.edu>
@@ -22,7 +22,7 @@ from commis import color
 from commis import ConsoleProgram
 
 from orca.version import get_version
-from orca.console import *
+from orca.console.commands import *
 
 ##########################################################################
 ## Utility Definition
