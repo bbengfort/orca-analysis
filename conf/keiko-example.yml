@@ -1,0 +1,14 @@
+# This is an example Keiko configuration
+# Add this file to ~/.orca/keiko.yml to change defaults
+
+# Whether or not we're in debug mode
+debug: true
+
+# Location of the database to analyze
+# by default looks in ~/.orca/orca.db, leave commented out if desired
+# database: null
+
+# Web Analysis UI configuration
+web:
+    host: 127.0.0.1 # The address to run the web server on
+    port: 8008      # The port to run the web server on 

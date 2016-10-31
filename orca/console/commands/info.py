@@ -22,6 +22,7 @@ import sqlite3
 
 from commis import Command
 from commis.exceptions import ConsoleError
+from orca.config import settings
 
 
 ##########################################################################
@@ -34,8 +35,9 @@ class InfoCommand(Command):
     help = "describe a single orca database as a text report"
     args = {
         'database': {
-            'nargs': 1,
-            'help': 'the path to the orca db',
+            'nargs': "?",
+            'default': settings.database,
+            'help': 'the path to the orca database to analyze',
         }
     }
 
@@ -45,7 +47,7 @@ class InfoCommand(Command):
         """
 
         # Ensure the path to the database exists
-        dbpath = args.database[0]
+        dbpath = args.database
         if not os.path.exists(dbpath) or not os.path.isfile(dbpath):
             raise ConsoleError(
                 "'{}' is not a valid path to a sqlite3 database".format(dbpath)

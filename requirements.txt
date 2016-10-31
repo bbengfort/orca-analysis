@@ -2,6 +2,18 @@
 commis==0.3
 colorama==0.3.6
 
+## Configuration
+confire==0.2.0
+PyYAML==3.11
+
+## Web Application
+Flask==0.11.1
+Jinja2==2.8
+click==6.6
+itsdangerous==0.24
+MarkupSafe==0.23
+Werkzeug==0.11.11
+
 ## Utilities
 #python-dateutil==2.5.3
 #six==1.10.0

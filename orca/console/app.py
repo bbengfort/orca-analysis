@@ -32,6 +32,7 @@ DESCRIPTION = "Analysis utilities for orca databases"
 EPILOG      = "If there are any bugs or concerns, submit an issue on GitHub"
 COMMANDS    = [
     InfoCommand,
+    ServeCommand,
 ]
 
 ##########################################################################
